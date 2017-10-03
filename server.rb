@@ -1,5 +1,6 @@
 require 'sinatra'
 
+
 get '/home' do
   erb :index
 end
@@ -16,5 +17,6 @@ get '/about_me' do
 end
 
 get '/favourites' do
-  @fav_links = ['https://www.feedly.com', 'https://play.google.com', 'https://www.github.com', 'https://www.bitmaker.co', 'https://www.royalcollection.org.uk/collection/themes/trails/frames-in-the-royal-collection#/'']
+  @fav_links = ['https://www.feedly.com', 'https://play.google.com', 'https://www.github.com', 'https://www.bitmaker.co', 'https://www.royalcollection.org.uk/collection/themes/trails/frames-in-the-royal-collection#/']
+  erb :favourites
 end
