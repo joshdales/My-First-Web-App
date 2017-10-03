@@ -7,6 +7,12 @@
   <body>
     <h1>This is all about me!</h1>
 
+    <h2>Skills</h2>
+    <ul>
+      <% @skills.each do |skill| %>
+      <li><%= skill %></li>
+      <% end %>
+    </ul>
 
   </body>
 </html>
